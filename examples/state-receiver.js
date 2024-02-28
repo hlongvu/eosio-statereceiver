@@ -107,5 +107,5 @@ sr.onError = (err) => {
 sr.start();
 
 setTimeout(() => {
-  sr.connection._onClose(102)
+  sr.connection.ws.close(1002)
 }, 5000);
